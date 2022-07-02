@@ -1,0 +1,23 @@
+<h3>Employee Details</h3>
+<div>
+    <div>
+        <label>
+            <b>First Name: </b>
+        </label> {{employee.firstname}}
+    </div>
+    <div>
+        <label>
+            <b>Last Name: </b>
+        </label> {{employee.lastname}}
+    </div>
+    <div>
+        <label>
+            <b>Email: </b>
+        </label> {{employee.email}}
+    </div>
+    <div>
+        <button (click)="updateEmployee(employee.id)" class="btn btn-info"style="margin-left:10px">Update</button>
+<button (click)="deleteEmployee(employee.id)" class="btn btn-danger" style="margin-left:10px">Delete</button>
+
+    </div>
+</div>
